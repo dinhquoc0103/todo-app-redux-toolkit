@@ -1,0 +1,24 @@
+.todo-app {
+    max-width: 500px;
+    height: 90vh;
+    margin: 40px auto 35px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: rgb(191 191 191) 0px 0px 10px 4px;
+    padding: 20px;
+
+    .title {
+        text-align: center;
+        font-size: 38px;
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: 600;
+        margin: 0 0 25px 0;
+    }
+
+    .devider {
+        height: 0.5px;
+        background-color: #D9D9D9;
+        margin: 25px 0;
+        width: 100%;
+    }
+}

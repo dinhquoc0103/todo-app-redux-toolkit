@@ -1,0 +1,22 @@
+.todos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    &__list {
+        height: calc(100% - 40px);
+    }
+
+    &__add {
+        display: grid;
+        grid-template-columns: 70% 20% 10%;
+        input, select  {
+            border-right: none;
+        }
+
+        button {
+            // background-color: rgb(65, 208, 65);
+            border-radius: 2px;
+        }
+    }
+}

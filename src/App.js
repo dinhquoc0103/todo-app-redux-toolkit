@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import classNames from "classnames/bind";
+
+import styles from "./App.module.scss";
+import Filters from "./components/Filters/Filters";
+import TodoList from "./components/TodoList";
+
+
+const cx = classNames.bind(styles);
 
 function App() {
+  console.log("filter roio")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={cx("wrapper")}>
+      <div className={cx("todo-app")}>
+        <h1 className={cx("title")}>Todo App With Redux</h1>
+        <Filters />
+        <div className={cx("devider")}></div>
+        <TodoList />
+      </div>
     </div>
   );
 }

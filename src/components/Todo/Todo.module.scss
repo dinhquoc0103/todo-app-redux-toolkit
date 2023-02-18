@@ -1,0 +1,59 @@
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 4px 0;
+    .todo-checked {
+        input {
+            margin: 0 5px 0 0;
+            cursor: pointer;
+        }
+
+        label {
+            font-size: 15px;
+            vertical-align: text-top;
+        }
+    }
+
+    .left-block {
+        display: flex;
+        .priority-label {
+            display: block;
+            font-size: 13px;
+            padding: 2px 6px;
+            border-radius: 2px;
+            min-width: 60px;
+            text-align: center;
+        }
+
+        .priority-label--high {
+            border: 0.5px solid #f00000;
+            color: #f00000;
+            background-color: #e1aeae;
+        }
+    
+        .priority-label--medium {
+            border: 0.5px solid #1890FF;
+            color: #1890FF;
+            background-color: #E6F7FF;
+        }
+
+        .priority-label--low {
+            border: 0.5px solid #31373b;
+            color: #31373b;
+            background-color: #b0b0b0;
+        }
+    
+        .close {
+            cursor: pointer;
+            margin: 0 0 0 5px;
+            vertical-align: middle;
+            padding: 2px 6px;
+            transition: all .2s linear;
+        }
+
+        .close:hover {
+            color: #f00000;
+        }
+    }
+}

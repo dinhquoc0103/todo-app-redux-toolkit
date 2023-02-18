@@ -1,0 +1,45 @@
+.search__title,
+.status__title,
+.priority__title {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 5px;
+}
+
+.search__filter input,
+.priority__filter select {
+    width: 100%;
+}
+
+.search__filter input::placeholder{
+    color: #BFC5D6;
+}
+
+.filters {
+    margin: 0 auto;
+
+    & > *  {
+        margin: 0 0 10px 0;
+    }
+
+    .status {
+        &__filter {
+            font-size: 15px;
+            display: flex;
+
+            input {
+                margin: 0 3px 0 0;
+                width: 14px;
+                height: 14px;
+                cursor: pointer;
+
+            }
+            label {
+                margin: 0 10px 0 0;
+                padding: 0 0 5px 0;
+                vertical-align: bottom;
+            }
+        }
+    }
+
+}
