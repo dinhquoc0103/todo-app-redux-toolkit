@@ -13,7 +13,7 @@ const preloadedState = {
         status: 'All',
         priority: 'default'
     },
-    todoList: JSON.parse(localStorage.getItem("TODOLIST_STATE"))
+    todoList: JSON.parse(localStorage.getItem("TODOLIST_STATE")) ?? []
 }
 
 const store = configureStore({
